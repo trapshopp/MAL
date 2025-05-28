@@ -1,0 +1,31 @@
+html{
+*{
+
+padding 2px;
+box sizing: border-box; 
+
+}
+
+#encabezado { 
+background color: #   ;
+text-align:center;
+font-size:35px; 
+color:       
+height: auto;
+
+}
+
+
+
+.navbar{
+
+margin: 0px; 
+padding:0px; 
+text-aling:left;
+font-size:18px
+list-style-type:none; 
+height:auto;
+background-color:# ;
+
+}
+
