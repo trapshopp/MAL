@@ -1,0 +1,116 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(135deg, #0F0F0F, #1C1C1C, #0F0F0F);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+#encabezado {
+    font-size: 70px;
+    padding: 60px 20px;
+    color: #00FFAB;
+    text-shadow: 0 0 10px #00FFAB, 0 0 20px #F70776, 0 0 30px #F70776;
+    background-color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #F70776;
+}
+
+
+.navbar {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #F70776;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #00FFAB;
+    width: 0%;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.navbar a:hover {
+    color: #00FFAB;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Contenedor */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#columna_principal {
+    flex: 1 1 65%;
+    background-color: rgba(31, 31, 31, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #F70776;
+    font-size: 24px;
+}
+
+#columna_publicidad {
+    flex: 1 1 30%;
+    background-color: rgba(0, 255, 171, 0.9);
+    color: #000;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00FFAB;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pie {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #0D0D0D;
+    color: #F70776;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #F70776;
+    border-top: 5px solid #00FFAB;
+}
+
