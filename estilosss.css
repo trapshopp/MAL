@@ -1,0 +1,60 @@
+html{
+*{
+
+padding 2px;
+box sizing: border-box; 
+
+}
+
+#encabezado { 
+background color: #   ;
+text-align:center;
+font-size:35px; 
+color:       
+height: auto;
+
+}
+
+
+
+.navbar{
+
+margin: 0px; 
+padding:0px; 
+text-aling:left;
+font-size:18px
+list-style-type:none; 
+height:auto;
+background-color:# ;
+
+}
+
+
+
+#columna_principal  {
+
+float: left;     
+width: 70%; 
+height: 700px;  
+background-color: #FFFFFF; 
+
+｝
+
+#columna_publicidad {
+float: left; 
+width: 30%; 
+height: 700px;
+background-color: #A9F5D0;
+
+{
+
+#pie
+clear: both;  
+display: flex; 
+background-color: #04B404;
+height: 80px;
+text-align: center;
+color: white;
+
+{
+
