@@ -1,3 +1,4 @@
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ html, body {
   color: #ffffff;
 }
 
+/* Título principal */
 h1.titulo-principal {
   text-align: center;
   font-size: 100px;
@@ -40,6 +42,7 @@ h1.titulo-principal {
   }
 }
 
+/* Menú de navegación */
 ul#menu {
   position: sticky;
   top: 0;
@@ -73,7 +76,7 @@ ul#menu {
   cursor: pointer;
 }
 
-/* Contenedor para fichas en columna */
+/* Contenedor general para todas las fichas */
 .fichas-container {
   display: flex;
   flex-direction: column;
@@ -81,25 +84,26 @@ ul#menu {
   padding: 20px;
 }
 
-/* Ficha individual */
-div.ficha {
+/* Cada ficha (imagen con su borde y hover) */
+.ficha {
   width: 300px;
   height: 200px;
   margin: 15px 0;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 15px #00cfff;
+  border: 4px solid #00cfff; /* borde azul */
   background-color: #0e1a2b;
+  box-shadow: 0 0 15px #00cfff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 4px solid #00cfff; /* Marco azul */
 }
 
-div.ficha:hover {
+.ficha:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px #00e0ff;
 }
 
-div.ficha img {
+/* Imagen dentro de la ficha */
+.ficha img {
   width: 100%;
   height: 100%;
   object-fit: cover;
