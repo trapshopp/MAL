@@ -13,11 +13,7 @@ h1.titulo-principal {
   color: #00cfff;
   margin-top: 50px;
   margin-bottom: 30px;
-  text-shadow: 
-    3px 3px 0 #000, 
-    0 0 15px #00e0ff, 
-    0 0 30px #00cfff, 
-    0 0 45px #0099ff;
+  text-shadow: 3px 3px 0 #000, 0 0 15px #00e0ff, 0 0 30px #00cfff, 0 0 45px #0099ff;
   font-family: 'Bungee', 'Impact', 'Arial Black', sans-serif;
   letter-spacing: 3px;
   animation: parpadeoNeonAzul 1.8s infinite alternate;
@@ -25,17 +21,11 @@ h1.titulo-principal {
 
 @keyframes parpadeoNeonAzul {
   from {
-    text-shadow: 
-      3px 3px 0 #000, 
-      0 0 10px #00cfff, 
-      0 0 20px #00e0ff;
+    text-shadow: 3px 3px 0 #000, 0 0 10px #00cfff, 0 0 20px #00e0ff;
     opacity: 0.85;
   }
   to {
-    text-shadow: 
-      3px 3px 0 #000, 
-      0 0 25px #00cfff, 
-      0 0 50px #00e0ff;
+    text-shadow: 3px 3px 0 #000, 0 0 25px #00cfff, 0 0 50px #00e0ff;
     opacity: 1;
   }
 }
@@ -73,8 +63,31 @@ ul#menu {
   cursor: pointer;
 }
 
-/* Contenedor con diseño de rejilla horizontal */
-.fichas-container {
+div.ficha {
+  width: 160px;
+  height: 100px;
+  margin: 15px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00cfff;
+  background-color: #0e1a2b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.ficha:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00e0ff;
+}
+
+div.ficha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,27 +95,20 @@ ul#menu {
   padding: 20px;
 }
 
-/* Ficha reducida para que quepan 5 por fila */
-.ficha {
-  width: calc(20% - 20px); /* 5 por fila con margen incluido */
-  aspect-ratio: 4 / 3; /* Mantiene proporción */
+.galeria .imagen {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  overflow: hidden;
-  border: 3px solid #00cfff;
-  background-color: #0e1a2b;
-  box-shadow: 0 0 15px #00cfff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ficha:hover {
+.galeria .imagen:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #00e0ff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Imagen adaptada al contenedor */
-.ficha img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+
